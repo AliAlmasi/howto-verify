@@ -15,11 +15,14 @@ Now I want to write a useful summary of GitHub documentation here for beginners 
 
 *Using GPG or SSH, you can sign tags and commits. These tags or commits are marked as verified on GitHub so other people can be confident that the changes come from a trusted source.*
 
-> Currently **[GNU/Linux](./docs/gnulinux.md)** is ready. The Windows version will also be ready soon.
-
 ## Start reading!
-[You can read the GNU/Linux version here](./docs/gnulinux.md)    
-You can read the Windows version here.  
+[You can read the GNU/Linux version here.](./docs/gnulinux.md)    
+[The Windows version is here as well.](./docs/windows.md)  
+
+## Read in other places
+[My personal blog]()  
+[dev.to]()  
+[Medium]()  
 
 ## Author
 **[Ali Almasi](https://al1almasi.ir)**  
