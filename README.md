@@ -18,7 +18,7 @@ Now I want to write a useful summary of GitHub documentation here for beginners 
 > Currently **GNU/Linux** is ready. Windows version will also be ready soon.
 
 ## Start reading!
-[You can read the GNU/Linux version here.](./files/gnulinux.md)  
+[You can read the GNU/Linux version here](./docs/gnulinux.md)    
 You can read the Windows version here.  
 
 ## Author

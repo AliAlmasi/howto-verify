@@ -177,3 +177,8 @@ git config --global commit.gpgsign true
 Now you've completed setting up your GPG key pair to sign your Git commits on GitHub.
 
 Try and make some commits, push them to GitHub and Check them out. There must be a little "Verified" tag on the commits you've made. 😃
+
+## Author
+**[Ali Almasi](https://al1almasi.ir)**  
+[GitHub profile](https://github.com/alialmasi)  
+[Telegram channel](https://t.me/al_dot_dev)
