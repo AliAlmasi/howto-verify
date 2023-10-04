@@ -1,6 +1,6 @@
 ![](./files/title.jpg)  
 
-# What is "Verified" Git commits? How can I verify my Git commits?
+What is "Verified" Git commits? How can I verify my Git commits?
 
 These were the questions I asked myself when I saw "verified" commits on GitHub.
 
