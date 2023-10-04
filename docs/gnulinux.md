@@ -1,10 +1,8 @@
-![](../files/title.jpg)  
-
 # GNU/Linux
 
 >This tutorial is for **GNU/Linux Only**. [The Windows version is here.](./windows.md)
 
-## Step 1
+## Step 1  — Inspecting tools
 First, we need to make sure that we have `git`, `gnupg` and `github-cli` installed.
 
 ```shell
@@ -26,26 +24,26 @@ In most GNU/Linux distros, these are pre-installed (except for `github-cli`.) If
 
 > Note: we'll use `gnupg` to generate a GPG key pair. we'll also use `github-cli` to authenticate ourselves to GitHub (logging into our account with our cli).
 
-### Step 1.1 - Initialize your `git`
+### Step 1.1 — Initialize your `git`
 If you're new to Git, you probably have to initialize it first. (It's just a little "Name/Email" configuration, don't worry.) Open a terminal and do these:
 
 1. Set your name:
 
 ```shell
-$ git config --global user.name "YOUR NAME"
+git config --global user.name "YOUR NAME"
 ```
 
-> Tip: You can confirm that you have set the username correctly by using `$ git config --global user.name`
+> Tip: You can confirm that you have set the username correctly by using `git config --global user.name`
 
 2. Set your email:
 
 ```shell
-$ git config --global user.email "YOUR@EMAIL.COM"
+git config --global user.email "YOUR@EMAIL.COM"
 ```
 
-> Tip: You can confirm that you have set the email correctly by using `$ git config --global user.email`
+> Tip: You can confirm that you have set the email correctly by using `git config --global user.email`
 
-### Step 1.2 - Authenticate to GitHub in cli
+### Step 1.2 — Authenticate to GitHub in cli
 
 To push a local repository to GitHub, we need access. The easiest way to gain access is to authenticate using `github-cli`.  
 > *GitHub CLI is an open-source tool for using GitHub from your computer's command line. When you're working from the command line, you can use the GitHub CLI to save time and avoid switching contexts.*
@@ -60,7 +58,7 @@ gh auth login
 
 > *GitHub CLI automatically stores your Git credentials for you when you **choose HTTPS as your preferred protocol** for Git operations and **answer "yes" to the prompt asking if you would like to authenticate to Git with your GitHub credentials**. This can be useful as it allows you to use `git push`, `git pull`, and so on, without needing to set up a separate credential manager or use SSH.*
 
-## Step 2 - Generate a GPG key
+## Step 2 — Generate a GPG key
 Now that you've initialized your Git, you need to generate your own GPG key pair and add it to your GitHub account. This is where `gnupg` will help us. Open a terminal and do these:
 
 1. Generate a GPG key pair:
@@ -83,8 +81,8 @@ gpg --full-generate-key
 
 7. Type a secure passphrase.
 
-### Step 2.1 - Copy your public key
-Congratulations, we've generated your GPG key pair. Now, you need to copy your public key in order to add it to your GitHub account.
+### Step 2.1 — Copy your public key
+Congratulations, we've generated your GPG key pair. Now, you need to copy your public key to add it to your GitHub account.
 
 1. Use the `gpg --list-secret-keys --keyid-format=long` command to list the long form of the GPG keys for which you have both a public and private key.
 
@@ -113,7 +111,7 @@ gpg --armor --export 3AA5C34371567BD2
 
 Now that you have copied your public key, head over to *Step 3* to add your public key to your GitHub account.
 
-## Step 3 - Add your public key to your GitHub account
+## Step 3 — Add your public key to your GitHub account
 
 > *To sign commits associated with your account on GitHub, you can add a public GPG key to your account.  
 You can add multiple public keys to your account on GitHub. Commits signed by any of the corresponding private keys will show as verified. If you remove a public key, any commits signed by the corresponding private key will no longer show as verified.  
@@ -137,7 +135,7 @@ To add your public key to your GitHub account, open a terminal and do these:
 
 And you're done adding your public key to your GitHub account. Now you have to tell `git` about your GPG key.
 
-## Step 4 - Tell `git` about your GPG key.
+## Step 4 — Tell `git` about your GPG key.
 
 > *If you're using a GPG key that matches your committer identity and your verified email address associated with your account on GitHub.com, then you can begin signing commits and signing tags.*
 
@@ -181,9 +179,8 @@ Now you've completed setting up your GPG key pair to sign your Git commits on Gi
 Try and make some commits, push them to GitHub and Check them out. There must be a little "Verified" tag on the commits you've made. 😃
 
 ## Read in other places
-[My personal blog]()  
-[dev.to]()  
-[Medium]()  
+[My blog](https://note.al1almasi.ir/how-to-verify-git-commits)  
+[dev.to](https://dev.to/alialmasi/how-to-verify-git-commits-easy-guide-for-beginners-432o)  
 
 ## Author
 **[Ali Almasi](https://al1almasi.ir)**  
