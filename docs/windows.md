@@ -177,6 +177,8 @@ git config --global user.signingkey 3AA5C34371567BD2
 git config --global commit.gpgsign true
 ```
 
+> Pro Tip: If you encounter an error after committing a change, you may need to tell git where your system's gpg is located. You can easily fix this problem by entering the command: `git config --global gpg.program "C:\Program Files (x86)\path/to/your/gpg.exe"`
+
 Now you've completed setting up your GPG key pair to sign your Git commits on GitHub.
 
 Try and make some commits, push them to GitHub and Check them out. There must be a little "Verified" tag on the commits you've made. 😃
